@@ -12,7 +12,7 @@ import (
 
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/99designs/gqlgen/graphql/introspection"
-	"github.com/fwojciec/gqlgen-sqlc-example/pg"
+	"github.com/cleyonpiv/gqlgen-sqlc-example/pg"
 	"github.com/vektah/gqlparser"
 	"github.com/vektah/gqlparser/ast"
 )
@@ -535,7 +535,7 @@ func (ec *executionContext) field_Mutation_createAgent_args(ctx context.Context,
 	args := map[string]interface{}{}
 	var arg0 AgentInput
 	if tmp, ok := rawArgs["data"]; ok {
-		arg0, err = ec.unmarshalNAgentInput2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐAgentInput(ctx, tmp)
+		arg0, err = ec.unmarshalNAgentInput2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐAgentInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -549,7 +549,7 @@ func (ec *executionContext) field_Mutation_createAuthor_args(ctx context.Context
 	args := map[string]interface{}{}
 	var arg0 AuthorInput
 	if tmp, ok := rawArgs["data"]; ok {
-		arg0, err = ec.unmarshalNAuthorInput2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐAuthorInput(ctx, tmp)
+		arg0, err = ec.unmarshalNAuthorInput2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐAuthorInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -563,7 +563,7 @@ func (ec *executionContext) field_Mutation_createBook_args(ctx context.Context, 
 	args := map[string]interface{}{}
 	var arg0 BookInput
 	if tmp, ok := rawArgs["data"]; ok {
-		arg0, err = ec.unmarshalNBookInput2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐBookInput(ctx, tmp)
+		arg0, err = ec.unmarshalNBookInput2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐBookInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -627,7 +627,7 @@ func (ec *executionContext) field_Mutation_updateAgent_args(ctx context.Context,
 	args["id"] = arg0
 	var arg1 AgentInput
 	if tmp, ok := rawArgs["data"]; ok {
-		arg1, err = ec.unmarshalNAgentInput2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐAgentInput(ctx, tmp)
+		arg1, err = ec.unmarshalNAgentInput2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐAgentInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -649,7 +649,7 @@ func (ec *executionContext) field_Mutation_updateAuthor_args(ctx context.Context
 	args["id"] = arg0
 	var arg1 AuthorInput
 	if tmp, ok := rawArgs["data"]; ok {
-		arg1, err = ec.unmarshalNAuthorInput2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐAuthorInput(ctx, tmp)
+		arg1, err = ec.unmarshalNAuthorInput2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐAuthorInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -671,7 +671,7 @@ func (ec *executionContext) field_Mutation_updateBook_args(ctx context.Context, 
 	args["id"] = arg0
 	var arg1 BookInput
 	if tmp, ok := rawArgs["data"]; ok {
-		arg1, err = ec.unmarshalNBookInput2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐBookInput(ctx, tmp)
+		arg1, err = ec.unmarshalNBookInput2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐBookInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -917,7 +917,7 @@ func (ec *executionContext) _Agent_authors(ctx context.Context, field graphql.Co
 	res := resTmp.([]pg.Author)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNAuthor2ᚕgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthorᚄ(ctx, field.Selections, res)
+	return ec.marshalNAuthor2ᚕgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthorᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Author_id(ctx context.Context, field graphql.CollectedField, obj *pg.Author) (ret graphql.Marshaler) {
@@ -1062,7 +1062,7 @@ func (ec *executionContext) _Author_agent(ctx context.Context, field graphql.Col
 	res := resTmp.(*pg.Agent)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNAgent2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx, field.Selections, res)
+	return ec.marshalNAgent2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Author_books(ctx context.Context, field graphql.CollectedField, obj *pg.Author) (ret graphql.Marshaler) {
@@ -1099,7 +1099,7 @@ func (ec *executionContext) _Author_books(ctx context.Context, field graphql.Col
 	res := resTmp.([]pg.Book)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNBook2ᚕgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBookᚄ(ctx, field.Selections, res)
+	return ec.marshalNBook2ᚕgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBookᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Book_id(ctx context.Context, field graphql.CollectedField, obj *pg.Book) (ret graphql.Marshaler) {
@@ -1284,7 +1284,7 @@ func (ec *executionContext) _Book_authors(ctx context.Context, field graphql.Col
 	res := resTmp.([]pg.Author)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNAuthor2ᚕgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthorᚄ(ctx, field.Selections, res)
+	return ec.marshalNAuthor2ᚕgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthorᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_createAgent(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1328,7 +1328,7 @@ func (ec *executionContext) _Mutation_createAgent(ctx context.Context, field gra
 	res := resTmp.(*pg.Agent)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNAgent2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx, field.Selections, res)
+	return ec.marshalNAgent2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_updateAgent(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1372,7 +1372,7 @@ func (ec *executionContext) _Mutation_updateAgent(ctx context.Context, field gra
 	res := resTmp.(*pg.Agent)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNAgent2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx, field.Selections, res)
+	return ec.marshalNAgent2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_deleteAgent(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1416,7 +1416,7 @@ func (ec *executionContext) _Mutation_deleteAgent(ctx context.Context, field gra
 	res := resTmp.(*pg.Agent)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNAgent2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx, field.Selections, res)
+	return ec.marshalNAgent2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_createAuthor(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1460,7 +1460,7 @@ func (ec *executionContext) _Mutation_createAuthor(ctx context.Context, field gr
 	res := resTmp.(*pg.Author)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNAuthor2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx, field.Selections, res)
+	return ec.marshalNAuthor2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_updateAuthor(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1504,7 +1504,7 @@ func (ec *executionContext) _Mutation_updateAuthor(ctx context.Context, field gr
 	res := resTmp.(*pg.Author)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNAuthor2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx, field.Selections, res)
+	return ec.marshalNAuthor2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_deleteAuthor(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1548,7 +1548,7 @@ func (ec *executionContext) _Mutation_deleteAuthor(ctx context.Context, field gr
 	res := resTmp.(*pg.Author)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNAuthor2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx, field.Selections, res)
+	return ec.marshalNAuthor2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_createBook(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1592,7 +1592,7 @@ func (ec *executionContext) _Mutation_createBook(ctx context.Context, field grap
 	res := resTmp.(*pg.Book)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNBook2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx, field.Selections, res)
+	return ec.marshalNBook2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_updateBook(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1636,7 +1636,7 @@ func (ec *executionContext) _Mutation_updateBook(ctx context.Context, field grap
 	res := resTmp.(*pg.Book)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNBook2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx, field.Selections, res)
+	return ec.marshalNBook2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_deleteBook(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1680,7 +1680,7 @@ func (ec *executionContext) _Mutation_deleteBook(ctx context.Context, field grap
 	res := resTmp.(*pg.Book)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNBook2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx, field.Selections, res)
+	return ec.marshalNBook2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query_agent(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1721,7 +1721,7 @@ func (ec *executionContext) _Query_agent(ctx context.Context, field graphql.Coll
 	res := resTmp.(*pg.Agent)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalOAgent2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx, field.Selections, res)
+	return ec.marshalOAgent2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query_agents(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1758,7 +1758,7 @@ func (ec *executionContext) _Query_agents(ctx context.Context, field graphql.Col
 	res := resTmp.([]pg.Agent)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNAgent2ᚕgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgentᚄ(ctx, field.Selections, res)
+	return ec.marshalNAgent2ᚕgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgentᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query_author(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1799,7 +1799,7 @@ func (ec *executionContext) _Query_author(ctx context.Context, field graphql.Col
 	res := resTmp.(*pg.Author)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalOAuthor2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx, field.Selections, res)
+	return ec.marshalOAuthor2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query_authors(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1836,7 +1836,7 @@ func (ec *executionContext) _Query_authors(ctx context.Context, field graphql.Co
 	res := resTmp.([]pg.Author)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNAuthor2ᚕgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthorᚄ(ctx, field.Selections, res)
+	return ec.marshalNAuthor2ᚕgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthorᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query_book(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1877,7 +1877,7 @@ func (ec *executionContext) _Query_book(ctx context.Context, field graphql.Colle
 	res := resTmp.(*pg.Book)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalOBook2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx, field.Selections, res)
+	return ec.marshalOBook2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query_books(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -1914,7 +1914,7 @@ func (ec *executionContext) _Query_books(ctx context.Context, field graphql.Coll
 	res := resTmp.([]pg.Book)
 	rctx.Result = res
 	ctx = ec.Tracer.StartFieldChildExecution(ctx)
-	return ec.marshalNBook2ᚕgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBookᚄ(ctx, field.Selections, res)
+	return ec.marshalNBook2ᚕgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBookᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query___type(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -3840,11 +3840,11 @@ func (ec *executionContext) ___Type(ctx context.Context, sel ast.SelectionSet, o
 
 // region    ***************************** type.gotpl *****************************
 
-func (ec *executionContext) marshalNAgent2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx context.Context, sel ast.SelectionSet, v pg.Agent) graphql.Marshaler {
+func (ec *executionContext) marshalNAgent2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx context.Context, sel ast.SelectionSet, v pg.Agent) graphql.Marshaler {
 	return ec._Agent(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNAgent2ᚕgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgentᚄ(ctx context.Context, sel ast.SelectionSet, v []pg.Agent) graphql.Marshaler {
+func (ec *executionContext) marshalNAgent2ᚕgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgentᚄ(ctx context.Context, sel ast.SelectionSet, v []pg.Agent) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -3868,7 +3868,7 @@ func (ec *executionContext) marshalNAgent2ᚕgithubᚗcomᚋfwojciecᚋgqlgenᚑ
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNAgent2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx, sel, v[i])
+			ret[i] = ec.marshalNAgent2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -3881,7 +3881,7 @@ func (ec *executionContext) marshalNAgent2ᚕgithubᚗcomᚋfwojciecᚋgqlgenᚑ
 	return ret
 }
 
-func (ec *executionContext) marshalNAgent2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx context.Context, sel ast.SelectionSet, v *pg.Agent) graphql.Marshaler {
+func (ec *executionContext) marshalNAgent2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx context.Context, sel ast.SelectionSet, v *pg.Agent) graphql.Marshaler {
 	if v == nil {
 		if !ec.HasError(graphql.GetResolverContext(ctx)) {
 			ec.Errorf(ctx, "must not be null")
@@ -3891,15 +3891,15 @@ func (ec *executionContext) marshalNAgent2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑ
 	return ec._Agent(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNAgentInput2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐAgentInput(ctx context.Context, v interface{}) (AgentInput, error) {
+func (ec *executionContext) unmarshalNAgentInput2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐAgentInput(ctx context.Context, v interface{}) (AgentInput, error) {
 	return ec.unmarshalInputAgentInput(ctx, v)
 }
 
-func (ec *executionContext) marshalNAuthor2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx context.Context, sel ast.SelectionSet, v pg.Author) graphql.Marshaler {
+func (ec *executionContext) marshalNAuthor2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx context.Context, sel ast.SelectionSet, v pg.Author) graphql.Marshaler {
 	return ec._Author(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNAuthor2ᚕgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthorᚄ(ctx context.Context, sel ast.SelectionSet, v []pg.Author) graphql.Marshaler {
+func (ec *executionContext) marshalNAuthor2ᚕgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthorᚄ(ctx context.Context, sel ast.SelectionSet, v []pg.Author) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -3923,7 +3923,7 @@ func (ec *executionContext) marshalNAuthor2ᚕgithubᚗcomᚋfwojciecᚋgqlgen�
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNAuthor2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx, sel, v[i])
+			ret[i] = ec.marshalNAuthor2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -3936,7 +3936,7 @@ func (ec *executionContext) marshalNAuthor2ᚕgithubᚗcomᚋfwojciecᚋgqlgen�
 	return ret
 }
 
-func (ec *executionContext) marshalNAuthor2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx context.Context, sel ast.SelectionSet, v *pg.Author) graphql.Marshaler {
+func (ec *executionContext) marshalNAuthor2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx context.Context, sel ast.SelectionSet, v *pg.Author) graphql.Marshaler {
 	if v == nil {
 		if !ec.HasError(graphql.GetResolverContext(ctx)) {
 			ec.Errorf(ctx, "must not be null")
@@ -3946,15 +3946,15 @@ func (ec *executionContext) marshalNAuthor2ᚖgithubᚗcomᚋfwojciecᚋgqlgen�
 	return ec._Author(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNAuthorInput2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐAuthorInput(ctx context.Context, v interface{}) (AuthorInput, error) {
+func (ec *executionContext) unmarshalNAuthorInput2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐAuthorInput(ctx context.Context, v interface{}) (AuthorInput, error) {
 	return ec.unmarshalInputAuthorInput(ctx, v)
 }
 
-func (ec *executionContext) marshalNBook2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx context.Context, sel ast.SelectionSet, v pg.Book) graphql.Marshaler {
+func (ec *executionContext) marshalNBook2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx context.Context, sel ast.SelectionSet, v pg.Book) graphql.Marshaler {
 	return ec._Book(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNBook2ᚕgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBookᚄ(ctx context.Context, sel ast.SelectionSet, v []pg.Book) graphql.Marshaler {
+func (ec *executionContext) marshalNBook2ᚕgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBookᚄ(ctx context.Context, sel ast.SelectionSet, v []pg.Book) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -3978,7 +3978,7 @@ func (ec *executionContext) marshalNBook2ᚕgithubᚗcomᚋfwojciecᚋgqlgenᚑs
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNBook2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx, sel, v[i])
+			ret[i] = ec.marshalNBook2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -3991,7 +3991,7 @@ func (ec *executionContext) marshalNBook2ᚕgithubᚗcomᚋfwojciecᚋgqlgenᚑs
 	return ret
 }
 
-func (ec *executionContext) marshalNBook2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx context.Context, sel ast.SelectionSet, v *pg.Book) graphql.Marshaler {
+func (ec *executionContext) marshalNBook2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx context.Context, sel ast.SelectionSet, v *pg.Book) graphql.Marshaler {
 	if v == nil {
 		if !ec.HasError(graphql.GetResolverContext(ctx)) {
 			ec.Errorf(ctx, "must not be null")
@@ -4001,7 +4001,7 @@ func (ec *executionContext) marshalNBook2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑs
 	return ec._Book(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNBookInput2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐBookInput(ctx context.Context, v interface{}) (BookInput, error) {
+func (ec *executionContext) unmarshalNBookInput2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋgqlgenᚐBookInput(ctx context.Context, v interface{}) (BookInput, error) {
 	return ec.unmarshalInputBookInput(ctx, v)
 }
 
@@ -4302,33 +4302,33 @@ func (ec *executionContext) marshalN__TypeKind2string(ctx context.Context, sel a
 	return res
 }
 
-func (ec *executionContext) marshalOAgent2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx context.Context, sel ast.SelectionSet, v pg.Agent) graphql.Marshaler {
+func (ec *executionContext) marshalOAgent2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx context.Context, sel ast.SelectionSet, v pg.Agent) graphql.Marshaler {
 	return ec._Agent(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalOAgent2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx context.Context, sel ast.SelectionSet, v *pg.Agent) graphql.Marshaler {
+func (ec *executionContext) marshalOAgent2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAgent(ctx context.Context, sel ast.SelectionSet, v *pg.Agent) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return ec._Agent(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalOAuthor2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx context.Context, sel ast.SelectionSet, v pg.Author) graphql.Marshaler {
+func (ec *executionContext) marshalOAuthor2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx context.Context, sel ast.SelectionSet, v pg.Author) graphql.Marshaler {
 	return ec._Author(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalOAuthor2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx context.Context, sel ast.SelectionSet, v *pg.Author) graphql.Marshaler {
+func (ec *executionContext) marshalOAuthor2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐAuthor(ctx context.Context, sel ast.SelectionSet, v *pg.Author) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return ec._Author(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalOBook2githubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx context.Context, sel ast.SelectionSet, v pg.Book) graphql.Marshaler {
+func (ec *executionContext) marshalOBook2githubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx context.Context, sel ast.SelectionSet, v pg.Book) graphql.Marshaler {
 	return ec._Book(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalOBook2ᚖgithubᚗcomᚋfwojciecᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx context.Context, sel ast.SelectionSet, v *pg.Book) graphql.Marshaler {
+func (ec *executionContext) marshalOBook2ᚖgithubᚗcomᚋcleyonpivᚋgqlgenᚑsqlcᚑexampleᚋpgᚐBook(ctx context.Context, sel ast.SelectionSet, v *pg.Book) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}

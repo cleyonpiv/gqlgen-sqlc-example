@@ -1,14 +1,14 @@
 package dataloaders
 
-//go:generate go run github.com/vektah/dataloaden AgentLoader int64 *github.com/fwojciec/gqlgen-sqlc-example/pg.Agent
-//go:generate go run github.com/vektah/dataloaden AuthorSliceLoader int64 []github.com/fwojciec/gqlgen-sqlc-example/pg.Author
-//go:generate go run github.com/vektah/dataloaden BookSliceLoader int64 []github.com/fwojciec/gqlgen-sqlc-example/pg.Book
+//go:generate go run github.com/vektah/dataloaden AgentLoader int64 *github.com/cleyonpiv/gqlgen-sqlc-example/pg.Agent
+//go:generate go run github.com/vektah/dataloaden AuthorSliceLoader int64 []github.com/cleyonpiv/gqlgen-sqlc-example/pg.Author
+//go:generate go run github.com/vektah/dataloaden BookSliceLoader int64 []github.com/cleyonpiv/gqlgen-sqlc-example/pg.Book
 
 import (
 	"context"
 	"time"
 
-	"github.com/fwojciec/gqlgen-sqlc-example/pg" // update the username
+	"github.com/cleyonpiv/gqlgen-sqlc-example/pg"
 )
 
 type contextKey string

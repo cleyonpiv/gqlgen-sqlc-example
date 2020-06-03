@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/99designs/gqlgen/handler"
-	"github.com/fwojciec/gqlgen-sqlc-example/dataloaders" // update the username
-	"github.com/fwojciec/gqlgen-sqlc-example/pg"          // update the username
+	"github.com/cleyonpiv/gqlgen-sqlc-example/dataloaders"
+	"github.com/cleyonpiv/gqlgen-sqlc-example/pg"
 )
 
 // NewHandler returns a new graphql endpoint handler.
